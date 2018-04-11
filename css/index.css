@@ -1,0 +1,11 @@
+/* Begin Navbar */
+
+.navbar .navbar-brand{
+    width:154px
+}
+.navbar .navbar-brand img{
+    width: 100%;
+    height:100%;
+}
+
+/* End Navbar */
