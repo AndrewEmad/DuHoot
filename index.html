@@ -14,8 +14,8 @@
 <body>
     <!-- Begin Navbar -->
 
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
 
             <a class="navbar-brand" href="#">
                 <img src="img/svg/logo.svg" class="img-responsive" alt="DuHoot" />
@@ -57,12 +57,49 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
-
+        </div>
+    </nav>
     <!-- End Navbar -->
 
-
+    <!-- Begin Main -->
+    <main>
+        <!-- Begin Search -->
+        <div class="container-fluid cdiv-search">
+            <div class="cdiv-search-title">
+                What are you looking for?
+            </div>
+            <!-- Begin Form -->
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 offset-md-3">
+                            <select class="cselect-round">
+                            <option>Dubai</option>
+                        </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="cselect-round">
+                                <option>Education</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <input type="text" placeholder="Keyword, name, date, ..." class="cinp-keyword" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 offset-md-5">
+                            <input type="submit" value="SEARCH" class="iinp-submit-search btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- End Form -->
+        </div>
+        <!-- End Search -->
+    </main>
+    <!-- End Main -->
 
 
 
