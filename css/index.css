@@ -1,37 +1,36 @@
 /* Begin Fonts */
 
 @font-face {
-    font-family: 'Gotham Medium';
+    font-family: 'Gotham-Medium';
     src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Medium.otf') format('opentype'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Light';
-    src: url('../fonts/Gotham Light.otf');
+    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Light.otf') format('opentype'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Book';
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Bold.otf') format('opentype'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
     src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Book.otf') format('opentype'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-
 /* End Fonts */
 
-
 /* Begin Navbar */
-
-.container {
-    padding-right: 0
-}
-
-.container-fluid {
-    padding: 0
-}
 
 .navbar {
     padding-top: 0px;
@@ -41,8 +40,7 @@
     padding: 0;
 }
 
-.navbar-brand,
-.navbar-toggle {
+.navbar-brand, .navbar-toggle {
     padding-top: 15px;
     padding-bottom: 15px;
     height: 100%;
@@ -67,7 +65,7 @@
 
 .navbar .navbar-nav .nav-item .nav-link {
     font-size: 14px;
-    font-family: "Gotham Medium";
+    font-family: "Gotham-Medium";
     color: rgb(150, 166, 167);
     text-transform: uppercase;
     line-height: 1.714;
@@ -105,27 +103,26 @@
 
 .navbar .navbar-nav .cli-login a .cspan-login-text {
     font-size: 14px;
-    font-family: "Gotham Medium";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
     padding: 0px;
 }
 
-
 /* End Navbar */
-
 
 /* Begin Search */
 
 .cdiv-search {
     background-image: url('../img/background.png');
     background-size: cover;
+    padding-right: 15px
 }
 
 .cdiv-search-title {
     font-size: 30px;
-    font-family: "Gotham Medium";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     line-height: 1.6;
     text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
@@ -134,29 +131,36 @@
     margin-bottom: 30px
 }
 
-.cselect-round,
-.cinp-keyword {
+.cselect-round, .cinp-keyword {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 35px;
-    padding: 10px 30px;
+    padding: 15px 25px;
     font-size: 18px;
-    font-family: "Gotham Light";
+    font-family: "Gotham-Light";
     color: rgb(255, 255, 255);
     line-height: 1.667;
     text-align: left;
-    font-weight: lighter;
     -moz-appearance: none;
     /* Firefox */
     -webkit-appearance: none;
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.ci-arrow {
+    color: white;
+    position: relative;
+    bottom: 58px;
+    float: right;
+    margin-right: 25px;
 }
 
 .cinp-keyword::placeholder {
     font-size: 18px;
-    font-weight: lighter;
-    font-family: "Gotham Light";
+    font-family: "Gotham-Light";
     color: rgb(255, 255, 255);
 }
 
@@ -165,7 +169,7 @@
     padding-right: 30px;
     background-color: #e94e38;
     font-size: 18px;
-    font-family: "Gotham Medium";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 2.667;
@@ -176,15 +180,49 @@
     margin-bottom: 35px
 }
 
-
 /* End Search */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
 @media (max-width: 992px) {
     .navbar {
-        padding-top: 0px;
-        padding-bottom: 0px;
         background: linear-gradient(to right, #fff 90%, #fff 10%);
-        margin: 0;
-        padding: 0;
+    }
+    .navbar .navbar-nav .cli-search {
+        background-color: #fff;
+        color: #000
+    }
+    .navbar .navbar-nav .cli-search:hover {
+        background-color: #e2dee0;
+        color: #fff
+    }
+    .navbar .navbar-nav .cli-search:hover a i {
+        color: #fff
+    }
+    .navbar .navbar-nav .cli-search a i {
+        font-size: 24px;
+        color: #e2dee0;
+        text-transform: uppercase;
+        padding: 0px;
+    }
+    .navbar .navbar-nav .cli-login {
+        background-color: #e94e38;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        margin-bottom: 5px
     }
 }
