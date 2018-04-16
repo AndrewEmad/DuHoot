@@ -30,6 +30,10 @@
 
 /* End Fonts */
 
+body{
+    background-color: #f3f1f2
+}
+
 /* Begin Navbar */
 
 .navbar {
@@ -72,12 +76,12 @@
     height: 100%
 }
 
-.navbar .navbar-nav .cli-search {
+.navbar .navbar-nav .nav-search {
     background-color: #e2dee0;
     padding: 16px;
 }
 
-.navbar .navbar-nav .cli-search a i {
+.navbar .navbar-nav .nav-search a i {
     font-size: 24px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -85,7 +89,7 @@
     padding: 0px;
 }
 
-.navbar .navbar-nav .cli-login {
+.navbar .navbar-nav .nav-login {
     background-color: #e94e38;
     width: 12vw;
     padding-top: 16px;
@@ -93,7 +97,7 @@
     padding-left: 3%
 }
 
-.navbar .navbar-nav .cli-login a i {
+.navbar .navbar-nav .nav-login a i {
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -101,7 +105,7 @@
     padding: 0px;
 }
 
-.navbar .navbar-nav .cli-login a .cspan-login-text {
+.navbar .navbar-nav .nav-login a .nav-login-text {
     font-size: 14px;
     font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
@@ -114,13 +118,13 @@
 
 /* Begin Search */
 
-.cdiv-search {
+.search-container {
     background-image: url('../img/background.png');
     background-size: cover;
     padding-right: 15px
 }
 
-.cdiv-search-title {
+.search-title {
     font-size: 30px;
     font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
@@ -131,10 +135,9 @@
     margin-bottom: 30px
 }
 
-.cselect-round, .cinp-keyword {
+.search-select, .search-keyword {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 35px;
     padding: 15px 25px;
     font-size: 18px;
     font-family: "Gotham-Light";
@@ -150,7 +153,7 @@
     z-index: 2;
 }
 
-.ci-arrow {
+.search-select ~.select-arrow {
     color: white;
     position: relative;
     bottom: 58px;
@@ -158,13 +161,13 @@
     margin-right: 25px;
 }
 
-.cinp-keyword::placeholder {
+.search-keyword::placeholder {
     font-size: 18px;
     font-family: "Gotham-Light";
     color: rgb(255, 255, 255);
 }
 
-.iinp-submit-search {
+.search-submit {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #e94e38;
@@ -179,9 +182,79 @@
     margin-top: 6px;
     margin-bottom: 35px
 }
+.rounded{
+    border-radius: 35px !important;
+
+}
 
 /* End Search */
 
+
+/* Begin Content Header */
+.content-header{
+    background-color: #fff;
+    width:100%;
+    padding-top:12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cad2d3;
+
+}
+.header-tabs{
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 10px
+}
+.tab ~.tab{
+    margin-left:25px
+}
+.tab{
+    font-size: 12px;
+    font-family: "Gotham-Medium";
+    text-transform: uppercase;
+    color: rgb(150, 166, 167);
+
+}
+.tab:hover{
+    text-decoration: none;
+    color: rgb(233, 78, 56);
+}
+.tab-active{
+    color: rgb(233, 78, 56);
+}
+.header-location{
+    text-align: center;
+}
+.location-select{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #cad2d3;
+    padding: 13px 18px;
+    font-size: 12px;
+    font-family: "Gotham-Medium";
+    color: rgb(233, 78, 56);
+    text-transform: uppercase;
+    line-height: 4;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width:100%;
+    z-index: 2;
+}
+.select-wrapper{
+    width:calc(35.67% + 2px);
+    background-color: #fff;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left:10px
+}
+.location-select ~.select-arrow {
+    font-size: 12px;
+    color: rgb(150, 166, 167);
+    color: rgb(150, 166, 167);
+    position: relative;
+    right:20px;
+    float: right;
+    margin-top:-29px
+}
+/* End Content Header */
 
 
 
@@ -200,24 +273,24 @@
     .navbar {
         background: linear-gradient(to right, #fff 90%, #fff 10%);
     }
-    .navbar .navbar-nav .cli-search {
+    .navbar .navbar-nav .nav-search {
         background-color: #fff;
         color: #000
     }
-    .navbar .navbar-nav .cli-search:hover {
+    .navbar .navbar-nav .nav-search:hover {
         background-color: #e2dee0;
         color: #fff
     }
-    .navbar .navbar-nav .cli-search:hover a i {
+    .navbar .navbar-nav .nav-search:hover a i {
         color: #fff
     }
-    .navbar .navbar-nav .cli-search a i {
+    .navbar .navbar-nav .nav-search a i {
         font-size: 24px;
         color: #e2dee0;
         text-transform: uppercase;
         padding: 0px;
     }
-    .navbar .navbar-nav .cli-login {
+    .navbar .navbar-nav .nav-login {
         background-color: #e94e38;
         width: 100%;
         padding-top: 16px;
