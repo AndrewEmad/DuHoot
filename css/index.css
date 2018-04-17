@@ -46,7 +46,11 @@ option {
     color: #000
 }
 
-
+p{
+    -webkit-margin-before: 0;
+    -webkit-margin-after:0 ;
+    margin-bottom: 0
+}
 /* Begin Navbar */
 
 .navbar {
@@ -396,11 +400,18 @@ option {
 }
 
 .card {
-    margin-top: 32px
+    margin-top: 32px;
+    margin-bottom:50px;
+    border-radius:10px
 }
 
 .card-home .card-img-top {
-    border-bottom: 3px solid #1baf5d
+    border-bottom: 3px solid #1baf5d;
+    margin-top:-28px
+}
+
+.card-music .card-img-top {
+    border-bottom: 3px solid #f19e1f
 }
 
 .card-circle {
@@ -427,21 +438,46 @@ option {
     width: 30px
 }
 
+.card-music .card-circle img {
+    width: 26px
+}
+
 .card-body {
+    margin-top: -40px;
+    padding: 15px;
+}
+.card-text{
     font-size: 14px;
     font-family: "Gotham-Medium";
     color: rgb(86, 99, 117);
     text-align: center;
-    margin-top: -40px;
-    padding: 15px;
+    height:40px;
+    margin-bottom: 10px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
-
 .card-owner {
     font-size: 12px;
     font-family: "Gotham-Medium";
     color: rgb(27, 175, 93);
     text-align: center;
     margin: 0
+}
+
+.card-home .cost{
+    font-size: 12px;
+    font-family: "Gotham-Medium";
+    color: rgb(255, 255, 255);
+    position: relative;
+    top:8px;
+    right:8px;
+    float:right;
+    text-align:center;
+    padding:5px 12px
+     
 }
 
 .rating {
