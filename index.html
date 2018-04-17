@@ -23,8 +23,7 @@
                     <img src="img/svg/logo.svg" class="img-responsive" alt="DuHoot" />
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -112,15 +111,16 @@
 
     <!-- Begin Main -->
     <main>
+        <!-- Begin Content Header -->
         <header class="content-header">
             <div class="container">
                 <div class="row">
-                    <div class="header-tabs col-md-4">
+                    <div class="header-tabs col-xl-4 col-md-12">
                         <a class="tab tab-active" href="#">RECOMMENDED</a>
                         <a class="tab" href="#">LATEST</a>
                         <a class="tab" href="#">HIGHLIGHTS</a>
                     </div>
-                    <div class="header-location col-md-4">
+                    <div class="header-location col-xl-4 col-md-6">
                         <div class="select-wrapper">
                             <select class="location-select rounded">
                                 <option>Dubai</option>
@@ -130,20 +130,62 @@
                             </select>
                             <i class="fa fa-chevron-down select-arrow"></i>
                         </div>
-                        <div class="select-wrapper">
-                            <select class="location-select rounded">
-                                <option>Dubai</option>
-                                <option>Dubai</option>
-                                <option>Dubai</option>
-                                <option>Dubai</option>
-                            </select>
-                            <i class="fa fa-chevron-down select-arrow"></i>
-                        </div>
+                        <button class="header-show-map rounded">
+                            SHOW MAP
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </button>
 
+                    </div>
+                    <div class="header-filter col-xl-4 col-md-6">
+                        <label class="filter-label">FILTER:</label>
+                        <button class="circle green">
+                            <img src="img/svg/home.svg" class="img-home" alt="Home" />
+                        </button>
+                        <button class="circle grey">
+                            <img src="img/svg/user.svg" class="img-user" alt="User" />
+                        </button>
+                        <button class="circle grey">
+                            <img src="img/svg/hat.svg" class="img-hat" alt="Hat" />
+                        </button>
+                        <button class="circle orange">
+                            <img src="img/svg/music.svg" class="img-music" alt="Music" />
+                        </button>
+                        <button class="circle purple">
+                            <img src="img/svg/bus.svg" class="img-bus" alt="Bus" />
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- End Content Header -->
+
+        <!--Begin Content Body -->
+        <div class="container content-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-home">
+                        <img class="card-img-top" src="img/house-for-rent.png" alt="House">
+                        <span class="card-circle green">
+                            <img src="img/svg/home.svg" alt="Home" />
+                        </span>
+                        <div class="card-body">
+                            <p class="card-text">2 bedroom house for rent in Dubai</p>
+                            <p class="card-owner">VISION AGENCY</p>
+                            <div class="rating">
+                                <i class="fa fa-star selected" aria-hidden="true"></i>
+                                <i class="fa fa-star selected" aria-hidden="true"></i>
+                                <i class="fa fa-star selected" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span class="users-count">(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Content Body -->
+
     </main>
     <!-- End Main -->
 
@@ -151,6 +193,7 @@
     <!-- Begin Scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap-4.0.0.min.js"></script>
+    <script src="js/rating.js"></script>
     <!-- End Scripts -->
 </body>
 
