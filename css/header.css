@@ -1,0 +1,155 @@
+/* Begin Fonts */
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Medium.otf') format('opentype'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Light.otf') format('opentype'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Bold.otf') format('opentype'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Book.otf') format('opentype'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* End Fonts */
+
+
+/* Begin Navbar */
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: linear-gradient(to right, #fff 50%, #e94e38 50%);
+    margin: 0;
+}
+
+.navbar .container {
+    background: #fff;
+    padding-right: 0
+}
+
+.navbar-brand,
+.navbar-toggle {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    height: 100%;
+}
+
+.nav-item {
+    padding: 15px 10px
+}
+
+.nav-item:hover {
+    background-color: #e2dee0;
+}
+
+.nav-link:hover {
+    color: #fff !important
+}
+
+.navbar .navbar-brand img {
+    width: 154px;
+    height: 45px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-family: "Gotham-Medium";
+    color: rgb(150, 166, 167);
+    text-transform: uppercase;
+    line-height: 1.714;
+    height: 100%
+}
+
+.navbar .navbar-nav .nav-search {
+    background-color: #e2dee0;
+    padding: 16px;
+}
+
+.navbar .navbar-nav .nav-search a i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+.navbar .navbar-nav .nav-login {
+    background-color: #e94e38;
+    width: 12.5vw;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 3%
+}
+
+.navbar .navbar-nav .nav-login a i {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+.navbar .navbar-nav .nav-login a .nav-login-text {
+    font-size: 14px;
+    font-family: "Gotham-Medium";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px;
+}
+
+
+/* End Navbar */
+
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    .navbar {
+        background: #fff
+    }
+    .navbar .navbar-nav .nav-search {
+        background-color: #fff;
+        color: #000
+    }
+    .navbar .navbar-nav .nav-search:hover {
+        background-color: #e2dee0;
+        color: #fff
+    }
+    .navbar .navbar-nav .nav-search:hover a i {
+        color: #fff
+    }
+    .navbar .navbar-nav .nav-search a i {
+        font-size: 24px;
+        color: #e2dee0;
+        text-transform: uppercase;
+        padding: 0px;
+    }
+    .navbar .navbar-nav .nav-login {
+        background-color: #e94e38;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        margin-bottom: 5px
+    }
+}
