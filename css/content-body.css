@@ -122,7 +122,7 @@
     border: 2px solid #fff;
     padding: 8px 15px;
     font-size: 12px;
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     position: relative;
     top: 30px;
@@ -148,7 +148,7 @@
 }
 
 .bottom-green {
-    border-bottom: 3px solid #f19e1f;
+    border-bottom: 3px solid rgb(27, 175, 93);
 }
 
 .bottom-orange {
@@ -216,7 +216,7 @@
 
 .card-home .cost {
     font-size: 12px;
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     position: relative;
     top: 8px;
@@ -269,7 +269,7 @@
 
 .card-lg .card-title {
     font-size: 18px;
-    font-family: "Gotham-Book";
+    font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
     margin-right: 10px
@@ -290,7 +290,7 @@
 
 .card-lg .rate .users-count {
     color: #fff;
-    font-family: "Gotham-Light"
+    font-family: "Gotham-Medium"
 }
 
 .card-lg .user-img {
@@ -310,16 +310,17 @@
     margin-top: -40px
 }
 
-.card-lg .text {
+.card-lg .user-text {
     float: right;
     width: calc(100% - 90px);
     text-align: left;
     color: rgb(86, 99, 117);
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 .card-lg .rating {
-    color: rgb(241, 158, 31);
+    color: rgb(241, 158, 31);;
+    margin-top:-6px
 }
 
 .card-lg .user-name {
@@ -327,6 +328,7 @@
     font-family: "Gotham-Medium";
     color: rgb(86, 99, 117);
     font-weight: bold;
+    margin-top:6px
 }
 
 .card-lg .user-quote {
@@ -345,9 +347,15 @@
     font-size: 14px;
     color: rgb(86, 99, 117);
 }
-
+.card-lg .card-body .vertical-line{
+    border:1px solid #f3f1f2;
+    display:inline;
+    margin-left:-10px;
+    min-height:15px
+}
 .card-lg {
-    margin-bottom: 100px
+   height: 279px;
+   overflow:hidden
 }
 
 
@@ -358,10 +366,28 @@
 
 @media (max-width: 1199px) {}
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .card-lg {
+        height: auto;
+     }
+}
 
 @media(max-width: 767px) {}
 
-@media(max-width: 575px) {}
+@media(max-width: 575px) {
 
-;
+    .card-lg .rate {
+        position: relative;
+        display:block;
+        text-align:left;
+        top:-15px;
+        left:8px
+    }
+
+    .card-lg .card-title {
+        position:relative;
+        top:-10px;
+        
+    }
+}
+
