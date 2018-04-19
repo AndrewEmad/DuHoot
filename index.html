@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/content-header.css" />
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/content-body.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 
 <body>
@@ -73,9 +75,9 @@
 
     <!-- Begin Search -->
     <section class="container-fluid search-container">
-        <div class="search-title">
+        <h1 class="search-title">
             What are you looking for?
-        </div>
+        </h1>
         <!-- Begin Form -->
         <form>
             <div class="container">
@@ -166,7 +168,7 @@
         <!-- End Content Header -->
 
         <!--Begin Content Body -->
-        <div class="container content-body">
+        <section class="container content-body">
             <div class="row">
                 <!-- Begin Card -->
                 <div class="col-lg-3 col-sm-6">
@@ -730,16 +732,257 @@
                 </div>
                 <!-- End Card -->
             </div>
-        </div>
+            <div class="load-more">
+                <a href="#">Load more &rarr;</a>
+            </div>
+        </section>
         <!--End Content Body -->
+
+        <!-- Begin Features -->
+        <section class=" container features">
+            <header class="features-header">
+                <h1>What can DuHoot offer to you?</h1>
+                <p>Etiam cursus ipsum quis enim faucibus</p>
+            </header>
+            <div class="circles">
+                <div class="feature-circle feature-selected" data-tab="#feature-tab-reality">
+                    <img class="home" />
+                </div>
+                <span class="hr-line"></span>
+
+                <div class="feature-circle" data-tab="#feature-tab-living">
+                    <img class="user" />
+                </div>
+                <span class="hr-line"></span>
+
+                <div class="feature-circle" data-tab="#feature-tab-education">
+                    <img class="hat" />
+                </div>
+                <span class="hr-line"></span>
+
+                <div class="feature-circle" data-tab="#feature-tab-entertainment">
+                    <img class="music" />
+                </div>
+                <span class="hr-line"></span>
+
+                <div class="feature-circle" data-tab="#feature-tab-mobility">
+                    <img class="bus" />
+                </div>
+            </div>
+
+            <!-- Begin Reality Feature Body -->
+            <div class="feature-body row tab-opened" id="feature-tab-reality">
+                <div class="title col-12 ">Reality</div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Reality Feature Body -->
+
+            <!-- Begin Living Feature Body -->
+            <div class="feature-body row" id="feature-tab-living">
+                <div class="title col-sm-12">Living</div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Living Feature Body -->
+
+            <!-- Begin Education Feature Body -->
+            <div class="feature-body row" id="feature-tab-education">
+                <div class="title col-sm-12">Education</div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Education Feature Body -->
+
+            <!-- Begin Entertainment Feature Body -->
+            <div class="feature-body row" id="feature-tab-entertainment">
+                <div class="title col-sm-12">Entertainment</div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entertainment Feature Body -->
+
+            <!-- Begin Mobility Feature Body -->
+            <div class="feature-body row" id="feature-tab-mobility">
+                <div class="title col-sm-12">Mobility</div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="feature-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+                        <p class="feature-text col-9">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida
+                            tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit,
+                            massa at.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mobility Feature Body -->
+        </section>
+        <!-- End Features -->
     </main>
     <!-- End Main -->
+
+    <!-- Begin Footer -->
+    <footer id="page-footer">
+        <div class="container">
+            <div class="row">
+                <form method="POST" class="subscribe">
+                    <label class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-10 offset-md-1">Subscribe to our newsletter</label>
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                        <input type="email" placeholder="your@email.com" class="rounded" />
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="submit" value="SUBSCRIBE" class="btn btn-danger rounded" />
+                    </div>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="title">Ipsum quis</h1>
+                        <a href="#">Aliquam quis</a>
+                        <br/>
+                        <a href="#">Pulvinar purus</a>
+                        <br/>
+                        <a href="#">Enim faucib</a>
+                        <br/>
+                        <a href="#">Etiam cursus</a>
+                        <br/>
+                        <a href="#">Ipsum quis</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 class="title">Ipsum quis</h1>
+                        <a href="#">Aliquam quis</a>
+                        <br/>
+                        <a href="#">Pulvinar purus</a>
+                        <br/>
+                        <a href="#">Enim faucib</a>
+                        <br/>
+                        <a href="#">Etiam cursus</a>
+                        <br/>
+                        <a href="#">Ipsum quis</a>
+                    </div>
+                    <div class="col-md-4 follow-us">
+                        <h1 class="title">Follow us</h1>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <div class="copyright">Copyright &copy; All Rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
 
     <!-- Begin Scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap-4.0.0.min.js"></script>
     <script src="js/rating.js"></script>
+    <script src="js/features-tabs.js"></script>
     <!-- End Scripts -->
 </body>
 

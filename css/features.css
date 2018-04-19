@@ -1,0 +1,165 @@
+/* Begin Fonts */
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Medium.otf') format('opentype'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Light.otf') format('opentype'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Bold.otf') format('opentype'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Book.otf') format('opentype'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* End Fonts */
+
+
+
+/* Begin Features */
+.features {
+    text-align: center;
+    padding-top:90px;
+    padding-bottom: 140px;
+}
+.features .features-header h1{
+    font-size: 22px;
+    font-family: "Gotham-Medium";
+    color: rgb(86, 99, 117);
+    text-align: center;
+}
+
+.features .features-header p {
+    font-size: 16px;
+    font-family: "Gotham-Book";
+    color: rgb(150, 166, 167);
+}
+
+
+.features .circles{
+    margin-top:65px;
+}
+.features .circles .hr-line{
+    display: inline-block;
+    width:53px;
+    height:0;
+    border:1px solid #e2dee0;
+    margin:0px 5px;
+
+}
+
+.features .feature-circle{
+    width:104px;
+    height:104px;
+    border-radius: 50%;
+    border:2px solid #9dacad;
+    display: inline-block; 
+}
+
+
+
+.features .feature-circle img{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width:50px;
+    background-color: #9dacad;
+    transform: scale(1.5);
+    
+}
+
+
+.features .feature-selected{
+    border:2px solid #1baf5d;
+}
+
+
+.features .feature-selected img{
+    background-color: #1baf5d;
+}
+
+
+.features .feature-circle .home{
+    -webkit-mask: url(../img/svg/home.svg) no-repeat center;
+}
+
+.features .feature-circle .hat{
+    -webkit-mask: url(../img/svg/hat.svg) no-repeat center;
+}
+
+.features .feature-circle .user{
+    width:38px;
+    -webkit-mask: url(../img/svg/user.svg) no-repeat center;
+}
+
+.features .feature-circle .music{
+    width:45px;
+    margin-left:-5px;
+    -webkit-mask: url(../img/svg/music.svg) no-repeat center;
+}
+
+.features .feature-circle .bus{
+    width:43px;
+    -webkit-mask: url(../img/svg/bus.svg) no-repeat center;
+}
+
+.features .feature-body{
+    margin-top:35px;
+    text-align: center;
+    display: none;
+
+}
+
+.features .tab-opened{
+    display:flex
+}
+
+.features .feature-body .title {
+    font-size: 24px;
+    font-family: "Gotham-Medium";
+    color: rgb(27, 175, 93);
+    line-height: 1.25;
+    text-align: center;
+}
+
+.features .feature-body .feature-icon{
+    width:63px;
+    height:63px;
+    border-radius: 50%;
+    background-color: rgb(27, 175, 93);
+    color: #fff;
+    margin-top:45px;
+    float:right;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding:10px
+}
+.features .feature-body .feature-text{
+    font-size: 14px;
+    font-family: "Gotham-Book";
+    color: rgb(86, 99, 117);
+    line-height: 1.714;
+    text-align: left;
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End Features */

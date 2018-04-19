@@ -36,6 +36,8 @@
 
 .content-body {
     padding-top: 14px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e2dee0
 }
 
 .card {
@@ -242,7 +244,11 @@
 .rating-star:hover {
     cursor: pointer;
 }
-
+.card-lg {
+    height: 279px;
+    overflow:hidden
+ }
+ 
 .card-lg .card-top {
     height: 125px;
 }
@@ -353,12 +359,18 @@
     margin-left:-10px;
     min-height:15px
 }
-.card-lg {
-   height: 279px;
-   overflow:hidden
+.load-more{
+    margin-top:40px;
+    text-align: center; 
 }
 
-
+.load-more a{
+    font-size: 18px;
+    font-family: "Gotham-Medium";
+    color: rgb(86, 99, 117);
+    text-decoration: underline;
+}
+  
 /* End Content Body */
 
 
