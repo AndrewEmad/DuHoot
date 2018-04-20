@@ -55,7 +55,8 @@
 #page-footer .subscribe input[type="email"] {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 18px;
     font-family: "Gotham-Book";
     color: rgb(255, 255, 255);
@@ -111,8 +112,9 @@
     color: rgb(255, 255, 255);
     text-decoration: underline;
     margin-bottom: 15px;
-}
+    text-decoration-color:rgb(192, 190, 188);
 
+}
 
 #page-footer .footer-bottom a{
     font-size: 14px;
@@ -131,10 +133,56 @@
     margin-left:20px
 }
     
-#page-footer .footer-bottom .follow-us .copyright {
+#page-footer .footer-bottom .copyright {
     font-size: 14px;
     font-family: "Gotham-Light";
     color: rgb(255, 255, 255);
-    margin-top:60px
+    margin-top:-20px
 }
+
+
+/* Media Queries */
+
+
+@media (max-width: 991px) {
+    #page-footer .footer-bottom .copyright {
+        text-align:center;
+        margin-top:20px
+    }
+
+    #page-footer .footer-bottom .follow-us a{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    #page-footer .footer-bottom .follow-us a ~ a{
+        margin-left:10px
+    }
+}
+
+@media(max-width: 575px) {
+    #page-footer .footer-bottom{
+        text-align: center
+    }
+    #page-footer .footer-bottom .follow-us{
+        text-align: center;
+        margin-top:20px
+    }
+
+    #page-footer .subscribe i{
+        left:15px;
+    }
+    #page-footer .subscribe input[type="email"] {
+        padding-left: 40px;
+        padding-right:100px; 
+    }
+    #page-footer .subscribe input[type="submit"]{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }  
+}
+
+
   

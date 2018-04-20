@@ -42,7 +42,7 @@
 
 .card {
     margin-top: 32px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     border-bottom: 1px solid #e2dee0
 }
@@ -64,8 +64,8 @@
     height: 0px;
     overflow: hidden;
     text-align: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     transition: height 0.07s
 }
 
