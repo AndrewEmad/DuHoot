@@ -156,6 +156,9 @@
 
     }
 
+}
+
+@media (max-width: 991px) and (min-width:576px){
     #page-footer .footer-bottom .follow-us a ~ a{
         margin-left:10px
     }
@@ -169,7 +172,11 @@
         text-align: center;
         margin-top:20px
     }
+}
 
+
+
+@media(max-width: 420px) {
     #page-footer .subscribe i{
         left:15px;
     }

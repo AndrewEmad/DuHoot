@@ -54,14 +54,14 @@
 }
 
 .nav-item {
-    padding: 15px 10px
+    padding: 19px 10px
 }
 
 .nav-item:hover {
     background-color: #e2dee0;
 }
 
-.nav-link:hover {
+.nav-item:hover .nav-link{
     color: #fff !important
 }
 
