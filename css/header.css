@@ -75,7 +75,6 @@
     font-family: "Gotham-Medium";
     color: rgb(150, 166, 167);
     text-transform: uppercase;
-    line-height: 1.714;
     height: 100%
 }
 
@@ -95,7 +94,7 @@
 .navbar .navbar-nav .nav-login {
     background-color: #e94e38;
     width: 12.5vw;
-    padding-top: 16px;
+    padding-top: 19px;
     padding-bottom: 15px;
     padding-left: 3%
 }
