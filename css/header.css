@@ -1,42 +1,42 @@
 /* Begin Navbar */
 
-.navbar {
+#page-header .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
     background: linear-gradient(to right, #fff 50%, #e94e38 50%);
     margin: 0;
 }
 
-.navbar .container {
+#page-header .navbar .container {
     background: #fff;
     padding-right: 0
 }
 
-.navbar-brand,
-.navbar-toggle {
+#page-header .navbar-brand,
+#page-header .navbar-toggle {
     padding-top: 15px;
     padding-bottom: 14px;
     height: 100%;
 }
 
-.nav-item {
+#page-header .nav-item {
     padding: 19px 10px
 }
 
-.nav-item:hover {
+#page-header .nav-item:hover {
     background-color: #e2dee0;
 }
 
-.nav-item:hover .nav-link {
+#page-header .nav-item:hover .nav-link {
     color: #fff !important
 }
 
-.navbar .navbar-brand img {
+#page-header .navbar .navbar-brand img {
     width: 154px;
     height: 45px;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
+#page-header .navbar .navbar-nav .nav-item .nav-link {
     font-size: 14px;
     font-family: "Gotham-Medium";
     color: rgb(150, 166, 167);
@@ -44,12 +44,12 @@
     height: 100%
 }
 
-.navbar .navbar-nav .nav-search {
+#page-header .navbar .navbar-nav .nav-search {
     background-color: #e2dee0;
     padding: 16px;
 }
 
-.navbar .navbar-nav .nav-search a i {
+#page-header .navbar .navbar-nav .nav-search a i {
     font-size: 24px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -57,7 +57,7 @@
     padding: 0px;
 }
 
-.navbar .navbar-nav .nav-login {
+#page-header .navbar .navbar-nav .nav-login {
     background-color: #e94e38;
     width: 12.5vw;
     padding-top: 19px;
@@ -65,7 +65,7 @@
     padding-left: 3%
 }
 
-.navbar .navbar-nav .nav-login a i {
+#page-header .navbar .navbar-nav .nav-login a i {
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -73,7 +73,7 @@
     padding-right: 10px;
 }
 
-.navbar .navbar-nav .nav-login a .nav-login-text {
+#page-header .navbar .navbar-nav .nav-login a .nav-login-text {
     font-size: 14px;
     font-family: "Gotham-Medium";
     color: rgb(255, 255, 255);
@@ -89,27 +89,27 @@
 /* Media Queries */
 
 @media (max-width: 991px) {
-    .navbar {
+    #page-header .navbar {
         background: #fff
     }
-    .navbar .navbar-nav .nav-search {
+    #page-header .navbar .navbar-nav .nav-search {
         background-color: #fff;
         color: #000
     }
-    .navbar .navbar-nav .nav-search:hover {
+    #page-header .navbar .navbar-nav .nav-search:hover {
         background-color: #e2dee0;
         color: #fff
     }
-    .navbar .navbar-nav .nav-search:hover a i {
+    #page-header .navbar .navbar-nav .nav-search:hover a i {
         color: #fff
     }
-    .navbar .navbar-nav .nav-search a i {
+    #page-header .navbar .navbar-nav .nav-search a i {
         font-size: 24px;
         color: #e2dee0;
         text-transform: uppercase;
         padding: 0px;
     }
-    .navbar .navbar-nav .nav-login {
+    #page-header .navbar .navbar-nav .nav-login {
         background-color: #e94e38;
         width: 100%;
         padding-top: 16px;

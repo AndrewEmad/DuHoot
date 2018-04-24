@@ -52,3 +52,7 @@ p {
 a:hover {
     text-decoration: none;
 }
+
+.rounded {
+    border-radius: 35px !important;
+}
