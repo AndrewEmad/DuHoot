@@ -77,10 +77,14 @@
     margin-right: 25px;
 }
 
-.search-keyword::placeholder {
+.search-keyword::-webkit-input-placeholder {
     font-size: 18px;
     font-family: "Gotham-Light";
     color: rgb(255, 255, 255);
+}
+
+.search-btn {
+    text-align: center
 }
 
 .search-submit {
